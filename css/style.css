@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+/* Variables */
+:root {
+  /* colors */
+  --clr-gray: #383e42; /*383e42*/
+  --clr-gray-light: #dbe2e6;
+  --clr-red: #bb1e10; /*bb1e10*/
+  --clr-text: #111;
+  --clr-light: #f5f5f5;
+  --shadow: 1px 1px 2px var(--clr-text);
+
+  /* Fonts */
+  --fontw-n: 400;
+  --fontw-m: 500;
+  --fontw-b: 700;
+
+  --fonts-s: 0.9rem;
+  --fonts-m: 1.2rem;
+  --fonts-l: 1.5rem;
+  --fonts-xl: 2rem;
+  --fonts-xxl: 4rem;
+
+  --ff: "Roboto", sans-serif;
+  --ff-title: "Alex Brush";
+
+  /*Spacing*/
+  --spacer: 1rem;
+  --ltr-spacing: 0.1rem;
+}
+/*reset*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* main selectors */
+body {
+  background: var(--clr-gray);
+  font-family: var(--ff);
+  font-weight: var(--fontw-n);
+}
+main {
+  padding: 0.4rem;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: var(--shadow);
+  letter-spacing: var(--ltr-spacing);
+}
+h1 {
+  /* font-family: var(--ff-title); */
+  font-size: 3rem;
+}
+h1 span {
+  text-transform: lowercase;
+}
+h2 {
+  /* background: var(--clr-red); */
+  color: var(--clr-light);
+  padding: var(--spacer);
+  border-radius: calc(var(--spacer) * 1);
+  text-shadow: none;
+  font-family: var(--ff-title);
+  text-transform: unset;
+  font-weight: 100;
+  font-size: 2.5rem;
+  /* box-shadow: var(--shadow); */
+}
+
+p {
+  color: var(--clr-text);
+  padding-block: calc(var(--spacer) / 2);
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  background: var(--clr-red);
+  color: var(--clr-light);
+  padding: 0.8em 2em;
+  border-radius: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: var(--fonts-m);
+  text-transform: uppercase;
+}
+
+/* Header */
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  color: var(--clr-red);
+  padding: var(--spacer);
+  font-size: var(--fonts-xl);
+}
+.menu-bars {
+  margin: var(--spacer);
+}
+.menu-bars i {
+  font-size: var(--fonts-xl);
+  color: var(--clr-red);
+  text-shadow: var(--shadow);
+}
+
+.menu-mobile {
+  display: none;
+  list-style: none;
+  padding-inline: var(--spacer);
+  width: 100%;
+  text-align: right;
+  font-size: var(--fonts-l);
+  text-transform: lowercase;
+  /* background-color: var(--clr-gray-light); */
+}
+.menu-mobile a li {
+  padding-block: calc(var(--spacer) / 2);
+}
+.menu-mobile a {
+  color: var(--clr-red);
+  font-weight: var(--fontw-m);
+  text-shadow: var(--shadow);
+}
+.menu-mobile a:hover {
+  text-decoration: underline;
+}
+
+/*Home Page*/
+.btn__learn-more {
+  margin-top: var(--spacer);
+}
+
+.content__text {
+  position: relative;
+  padding: var(--spacer);
+  border: 3px solid var(--clr-red);
+  border-radius: 0.5rem;
+}
+.content__text-supply {
+  text-align: center;
+  font-size: var(--fonts-l);
+}
+
+.content__text__bcg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  filter: blur(1px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content__text-about__bcg-img {
+  background-image: url("../img/tree_rings_about.webp");
+}
+.content__text-supply__bcg-img {
+  background-image: url("../img/tree_rings_suply.webp");
+}
+.content__text-contact__bcg-img {
+  background-image: url("../img/tree_rings_contact.webp");
+}
+.content__text-supply li {
+  list-style: none;
+  padding: calc(var(--spacer) / 1.5);
+  background: var(--clr-gray);
+  margin-block: calc(var(--spacer));
+  color: var(--clr-light);
+  border-radius: 3rem;
+  font-size: var(--fonts-l);
+}
+.content__text-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  box-shadow: 1px 1px 2px rgb(160, 160, 160);
+}
+
+/* Contact */
+.content__contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.content__contact-form label {
+  padding-block: 0.5em;
+  padding-top: 1em;
+  font-size: var(--fonts-s);
+  font-weight: var(--fontw-m);
+}
+.content__contact-form__input {
+  font-size: var(--fonts-m);
+  padding: 0.5em;
+  border-radius: 2rem;
+  background-color: var(--clr-gray-light);
+}
+
+.content__contact-form__textarea {
+  resize: none;
+  margin-bottom: 1em;
+}
+
+.content__contact-form__submit {
+  cursor: pointer;
+}
+
+.content__location iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* Gallery */
+.content__image-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__image-gallery__row img {
+  width: 100%;
+  object-fit: cover;
+  margin-block: 0.5em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.content__image-gallery__row img:hover {
+  opacity: 0.7;
+}
+.content__image-gallery__row__hidden,
+.btn-close {
+  display: none;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 25%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.modal img {
+  width: 100%;
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: var(--clr-gray-light);
+  padding: 0.7em 0;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 34px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer span {
+  text-transform: uppercase;
+}
+
+/*---media queries---*/
+/* ******* */
+/* Tablet  */
+/* (manji) */
+/* ******* */
+@media (min-width: 800px) {
+  .container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+/* ******* */
+/* Tablet  */
+/* (veći) */
+/* ******* */
+@media (min-width: 1020px) {
+}
+/* ******* */
+/*  Laptop */
+/* ******* */
+@media (min-width: 1270px) {
+}
+/* ******* */
+/* Desktop */
+/* ******* */
+@media (min-width: 1600px) {
+}
