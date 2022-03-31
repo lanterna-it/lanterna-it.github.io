@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f53e8f63cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Univerzal Lisac d.o.o.</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header-menu">
+        <a href="index.html">
+          <h1>Univerzal<span> d.o.o.</span></h1>
+        </a>
+        <div class="menu-bars"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <ul class="menu-mobile">
+        <a href="o-nama.html">
+          <li>O nama</li>
+        </a>
+        <a href="#">
+          <li>Ponuda</li>
+        </a>
+        <a href="kontakt.html">
+          <li>Kontakt</li>
+        </a>
+      </ul>
+    </header>
+    <main class="container">
+      <div class="content__contact">
+        <div class="content__contact-title">
+          <h2>Kontakt</h2>
+        </div>
+        <div class="content__text">
+          <div class="content__contact-form">
+            <label for="name">Ime i prezime</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="content__contact-form__input"
+            />
+            <label for="adress">Adresa</label>
+            <input
+              type="text"
+              id="adress"
+              name="adress"
+              class="content__contact-form__input"
+            />
+            <label for="telephone">Telefon</label>
+            <input
+              type="text"
+              id="telephone"
+              name="telephone"
+              class="content__contact-form__input"
+            />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="content__contact-form__input"
+            />
+            <label for="message">Postavite pitanje</label>
+            <textarea
+              name="message"
+              id="message"
+              class="content__contact-form__textarea content__contact-form__input"
+            ></textarea>
+            <div class="content__contact-form__submit btn" id="submit-form">
+              Pošalji
+            </div>
+            <div id="ajaxResponseSuccess"></div>
+            <div id="ajaxResponseFail"></div>
+          </div>
+          <div
+            class="content__text__bcg-img content__text-contact__bcg-img"
+          ></div>
+        </div>
+      </div>
+      <div class="content__location">
+        <div class="content__location-title">
+          <h2>gdje se nalazimo?</h2>
+        </div>
+        <div class="content__location-text content__text">
+          <div class="content__location-text__main-content">
+            <p>
+              Lisac je malo, staro naselje. Nalazi se 4 km sjeverozapadno od
+              Klane, na samoj granici sa Slovenijom, na nadmorskoj visini od oko
+              700 m. Okruženo pašnjacima, brdima i šumom, izaziva osjećaj
+              spokoja i mira, izgledom podsjećajući na neko malo, idilično,
+              alpsko mjestašce.
+            </p>
+            <div class="content__location-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d398.422541032952!2d14.346912895380843!3d45.475838209348666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8fa2259892119681!2zNDXCsDI4JzMzLjQiTiAxNMKwMjAnNTAuMiJF!5e1!3m2!1shr!2shr!4v1647946129672!5m2!1shr!2shr"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div
+            class="content__text__bcg-img content__text-contact__bcg-img"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <footer class="container">
+      <hr />
+      <div class="row">
+        <p>&copy;<span>univerzal</span> d.o.o. - 2022</p>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/mail.js"></script>
+  </body>
+</html>
