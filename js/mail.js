@@ -1,6 +1,7 @@
 var submit = document.querySelector("#submit-form");
 
 submit.addEventListener("click", () => {
+  console.log("klik");
   var name = document.querySelector("#name");
   var email = document.querySelector("#email");
   var message = document.querySelector("#message");
@@ -17,7 +18,7 @@ submit.addEventListener("click", () => {
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
-    if (1=2) {
+    if ((this.readyState = 4 && this.status == 200)) {
       var successMsg = "Mail uspješno poslan. Kontaktirati ćemo Vas uskoro.";
       document.getElementById("ajaxResponseFail").style.display = "none";
       document.getElementById("ajaxResponseSuccess").style.display = "block";
